@@ -15,8 +15,9 @@ import org.opencv.android.CameraActivity;
 import org.opencv.android.CameraBridgeViewBase;
 
 import org.opencv.android.OpenCVLoader;
+import org.opencv.core.Core;
 import org.opencv.core.Mat;
-import org.opencv.core.Point;
+import org.opencv.core.Scalar;
 import org.opencv.imgproc.Imgproc;
 
 import java.util.Collections;
@@ -48,7 +49,7 @@ public class MainActivity extends CameraActivity {
                                                isStartButtonClicked = true;
                                                // vanish welcomeTextView
                                                welcomeTextView.setVisibility(View.GONE);
-                                               cameraBridgeViewBase.enableView();
+
                                            }
 
     });
@@ -69,11 +70,20 @@ public class MainActivity extends CameraActivity {
             @Override
             public Mat onCameraFrame(CameraBridgeViewBase.CvCameraViewFrame inputFrame) {
                 gray = inputFrame.gray();
-                Mat rotationMatrix = Imgproc.getRotationMatrix2D(new Point(gray.cols() / 2, gray.rows() / 2), -90, 1);
-                Imgproc.warpAffine(gray, gray, rotationMatrix, gray.size());
-                Imgproc.Canny(gray, gray, 80, 100);
+                Mat result = new Mat();
 
-                return gray;
+                Imgproc.Canny(gray, gray, 80, 100);
+                Mat color = new Mat();
+                Imgproc.applyColorMap(gray,color,Imgproc.COLORMAP_SUMMER);
+
+                return color;
+               // Core.inRange(color, new Scalar(0), new Scalar(50), result);
+                //result.setTo(new Scalar(200,150,255),result);
+                //return result;
+
+
+
+
 
             }
         });
@@ -93,17 +103,11 @@ public class MainActivity extends CameraActivity {
         super.onResume();
         // Ensure that OpenCVLoader is initialized
         if (!OpenCVLoader.initDebug()) {
-
             // Handle initialization error if needed
         } else {
             // Start the camera view
-            if (isStartButtonClicked && cameraBridgeViewBase != null) {
-                if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
-                    cameraBridgeViewBase.enableView();
-                } else {
-                    // Request camera permission
-                    getPermission();
-                }
+            if (isStartButtonClicked) {
+                cameraBridgeViewBase.enableView();
             }
         }
     }
