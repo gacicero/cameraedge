@@ -8,7 +8,7 @@
      android:id="@+id/startButton"
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
-     android:text="Start Camera"
+     android:text="@string/start_button"
      android:layout_centerInParent="true" />
  <org.opencv.android.JavaCamera2View
      android:layout_width="match_parent"
