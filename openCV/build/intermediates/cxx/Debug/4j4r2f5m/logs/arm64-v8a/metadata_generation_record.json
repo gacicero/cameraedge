@@ -2,7 +2,7 @@
   {
     "level_": 0,
     "message_": "Start JSON generation. Platform version: 24 min SDK version: arm64-v8a",
-    "file_": "/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV/libcxx_helper/CMakeLists.txt",
+    "file_": "C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\libcxx_helper\\CMakeLists.txt",
     "tag_": "debug|arm64-v8a",
     "diagnosticCode_": 0,
     "memoizedIsInitialized": 1,
@@ -11,12 +11,12 @@
       "fieldsDescending": {}
     },
     "memoizedSize": -1,
-    "memoizedHashCode": 1963777718
+    "memoizedHashCode": -703005344
   },
   {
     "level_": 0,
-    "message_": "JSON \u0027/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV/.cxx/Debug/4j4r2f5m/arm64-v8a/android_gradle_build.json\u0027 was up-to-date",
-    "file_": "/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV/libcxx_helper/CMakeLists.txt",
+    "message_": "rebuilding JSON C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\.cxx\\Debug\\4j4r2f5m\\arm64-v8a\\android_gradle_build.json due to:",
+    "file_": "C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\libcxx_helper\\CMakeLists.txt",
     "tag_": "debug|arm64-v8a",
     "diagnosticCode_": 0,
     "memoizedIsInitialized": 1,
@@ -25,12 +25,138 @@
       "fieldsDescending": {}
     },
     "memoizedSize": -1,
-    "memoizedHashCode": -2048508268
+    "memoizedHashCode": 306539099
+  },
+  {
+    "level_": 0,
+    "message_": "- no fingerprint file, will remove stale configuration folder",
+    "file_": "C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 2110789570
+  },
+  {
+    "level_": 0,
+    "message_": "removing stale contents from \u0027C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\.cxx\\Debug\\4j4r2f5m\\arm64-v8a\u0027",
+    "file_": "C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1004741257
+  },
+  {
+    "level_": 0,
+    "message_": "created folder \u0027C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\.cxx\\Debug\\4j4r2f5m\\arm64-v8a\u0027",
+    "file_": "C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 2036038787
+  },
+  {
+    "level_": 0,
+    "message_": "executing cmake @echo off\n\"C:\\\\Users\\\\jackh\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\cmake\\\\3.22.1\\\\bin\\\\cmake.exe\" ^\n  \"-HC:\\\\Users\\\\jackh\\\\Documents\\\\GitHub\\\\cameraedge\\\\openCV\\\\libcxx_helper\" ^\n  \"-DCMAKE_SYSTEM_NAME\u003dAndroid\" ^\n  \"-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\" ^\n  \"-DCMAKE_SYSTEM_VERSION\u003d24\" ^\n  \"-DANDROID_PLATFORM\u003dandroid-24\" ^\n  \"-DANDROID_ABI\u003darm64-v8a\" ^\n  \"-DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a\" ^\n  \"-DANDROID_NDK\u003dC:\\\\Users\\\\jackh\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\25.1.8937393\" ^\n  \"-DCMAKE_ANDROID_NDK\u003dC:\\\\Users\\\\jackh\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\25.1.8937393\" ^\n  \"-DCMAKE_TOOLCHAIN_FILE\u003dC:\\\\Users\\\\jackh\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\25.1.8937393\\\\build\\\\cmake\\\\android.toolchain.cmake\" ^\n  \"-DCMAKE_MAKE_PROGRAM\u003dC:\\\\Users\\\\jackh\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\cmake\\\\3.22.1\\\\bin\\\\ninja.exe\" ^\n  \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dC:\\\\Users\\\\jackh\\\\Documents\\\\GitHub\\\\cameraedge\\\\openCV\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\4j4r2f5m\\\\obj\\\\arm64-v8a\" ^\n  \"-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dC:\\\\Users\\\\jackh\\\\Documents\\\\GitHub\\\\cameraedge\\\\openCV\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\4j4r2f5m\\\\obj\\\\arm64-v8a\" ^\n  \"-DCMAKE_BUILD_TYPE\u003dDebug\" ^\n  \"-BC:\\\\Users\\\\jackh\\\\Documents\\\\GitHub\\\\cameraedge\\\\openCV\\\\.cxx\\\\Debug\\\\4j4r2f5m\\\\arm64-v8a\" ^\n  -GNinja ^\n  \"-DANDROID_STL\u003dc++_shared\"\n",
+    "file_": "C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1363256076
+  },
+  {
+    "level_": 0,
+    "message_": "@echo off\n\"C:\\\\Users\\\\jackh\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\cmake\\\\3.22.1\\\\bin\\\\cmake.exe\" ^\n  \"-HC:\\\\Users\\\\jackh\\\\Documents\\\\GitHub\\\\cameraedge\\\\openCV\\\\libcxx_helper\" ^\n  \"-DCMAKE_SYSTEM_NAME\u003dAndroid\" ^\n  \"-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\" ^\n  \"-DCMAKE_SYSTEM_VERSION\u003d24\" ^\n  \"-DANDROID_PLATFORM\u003dandroid-24\" ^\n  \"-DANDROID_ABI\u003darm64-v8a\" ^\n  \"-DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a\" ^\n  \"-DANDROID_NDK\u003dC:\\\\Users\\\\jackh\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\25.1.8937393\" ^\n  \"-DCMAKE_ANDROID_NDK\u003dC:\\\\Users\\\\jackh\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\25.1.8937393\" ^\n  \"-DCMAKE_TOOLCHAIN_FILE\u003dC:\\\\Users\\\\jackh\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\25.1.8937393\\\\build\\\\cmake\\\\android.toolchain.cmake\" ^\n  \"-DCMAKE_MAKE_PROGRAM\u003dC:\\\\Users\\\\jackh\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\cmake\\\\3.22.1\\\\bin\\\\ninja.exe\" ^\n  \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dC:\\\\Users\\\\jackh\\\\Documents\\\\GitHub\\\\cameraedge\\\\openCV\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\4j4r2f5m\\\\obj\\\\arm64-v8a\" ^\n  \"-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dC:\\\\Users\\\\jackh\\\\Documents\\\\GitHub\\\\cameraedge\\\\openCV\\\\build\\\\intermediates\\\\cxx\\\\Debug\\\\4j4r2f5m\\\\obj\\\\arm64-v8a\" ^\n  \"-DCMAKE_BUILD_TYPE\u003dDebug\" ^\n  \"-BC:\\\\Users\\\\jackh\\\\Documents\\\\GitHub\\\\cameraedge\\\\openCV\\\\.cxx\\\\Debug\\\\4j4r2f5m\\\\arm64-v8a\" ^\n  -GNinja ^\n  \"-DANDROID_STL\u003dc++_shared\"\n",
+    "file_": "C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -841958605
+  },
+  {
+    "level_": 0,
+    "message_": "Exiting generation of C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\.cxx\\Debug\\4j4r2f5m\\arm64-v8a\\compile_commands.json.bin normally",
+    "file_": "C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 833333593
+  },
+  {
+    "level_": 0,
+    "message_": "done executing cmake",
+    "file_": "C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -299221950
+  },
+  {
+    "level_": 0,
+    "message_": "deleted unexpected build output C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\build\\intermediates\\cxx\\Debug\\4j4r2f5m\\obj\\arm64-v8a\\libc++_shared.so in incremental regenerate",
+    "file_": "C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1824262106
+  },
+  {
+    "level_": 0,
+    "message_": "hard linked C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\.cxx\\Debug\\4j4r2f5m\\arm64-v8a\\compile_commands.json to C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\.cxx\\tools\\debug\\arm64-v8a\\compile_commands.json",
+    "file_": "C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|arm64-v8a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1277961499
   },
   {
     "level_": 0,
     "message_": "JSON generation completed without problems",
-    "file_": "/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV/libcxx_helper/CMakeLists.txt",
+    "file_": "C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\libcxx_helper\\CMakeLists.txt",
     "tag_": "debug|arm64-v8a",
     "diagnosticCode_": 0,
     "memoizedIsInitialized": 1,
@@ -39,6 +165,6 @@
       "fieldsDescending": {}
     },
     "memoizedSize": -1,
-    "memoizedHashCode": 10666900
+    "memoizedHashCode": 1638851134
   }
 ]
