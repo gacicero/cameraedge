@@ -93,12 +93,17 @@ public class MainActivity extends CameraActivity {
         super.onResume();
         // Ensure that OpenCVLoader is initialized
         if (!OpenCVLoader.initDebug()) {
-            OpenCVLoader.initDebug();
+
             // Handle initialization error if needed
         } else {
             // Start the camera view
-            if (isStartButtonClicked) {
-                cameraBridgeViewBase.enableView();
+            if (isStartButtonClicked && cameraBridgeViewBase != null) {
+                if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+                    cameraBridgeViewBase.enableView();
+                } else {
+                    // Request camera permission
+                    getPermission();
+                }
             }
         }
     }
