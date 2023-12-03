@@ -21,8 +21,6 @@ import org.opencv.imgproc.Imgproc;
 
 import java.util.Collections;
 import java.util.List;
-import org.opencv.core.Core;
-
 
 
 
