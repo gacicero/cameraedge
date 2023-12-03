@@ -1,19 +1,18 @@
 package com.example.cameraedge;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import android.content.pm.PackageManager;
-import android.util.Log;
-
 import android.Manifest;
 
-
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import org.opencv.android.CameraActivity;
 import org.opencv.android.CameraBridgeViewBase;
-import org.opencv.android.JavaCamera2View;
+
 import org.opencv.android.OpenCVLoader;
 import org.opencv.core.Mat;
 import org.opencv.imgproc.Imgproc;
@@ -21,24 +20,35 @@ import org.opencv.imgproc.Imgproc;
 import java.util.Collections;
 import java.util.List;
 
+
+
 public class MainActivity extends CameraActivity {
 
     CameraBridgeViewBase cameraBridgeViewBase;
-
+    private Button startButton;
     Mat gray;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getPermission();
+        startButton = findViewById(R.id.startButton);
+        startButton.setOnClickListener(new View.OnClickListener() {
+                                           @Override
+                                           public void onClick(View v) {
+                                               getPermission();
+                                               startButton.setVisibility(View.GONE);
+                                           }
 
-        cameraBridgeViewBase = findViewById(R.id.cameraView);
+    });
+
+            cameraBridgeViewBase = findViewById(R.id.cameraView);
         cameraBridgeViewBase.setCvCameraViewListener(new CameraBridgeViewBase.CvCameraViewListener2() {
             @Override
             public void onCameraViewStarted(int width, int height) {
 
             }
+
 
             @Override
             public void onCameraViewStopped() {
@@ -50,13 +60,15 @@ public class MainActivity extends CameraActivity {
                 gray = inputFrame.gray();
 
                 Imgproc.Canny(gray, gray, 80, 100);
+
                 return gray;
+
             }
         });
 
-        if (OpenCVLoader.initDebug()) {
+        /* if (OpenCVLoader.initDebug()) {
             cameraBridgeViewBase.enableView();
-        }
+        } */
 
     }
 
@@ -64,18 +76,41 @@ public class MainActivity extends CameraActivity {
     protected List<? extends CameraBridgeViewBase> getCameraViewList() {
         return Collections.singletonList(cameraBridgeViewBase);
     }
-
+     @Override
+    protected void onResume() {
+        super.onResume();
+        // Ensure that OpenCVLoader is initialized
+        if (!OpenCVLoader.initDebug()) {
+            // Handle initialization error if needed
+        } else {
+            // Start the camera view
+           // cameraBridgeViewBase.enableView();
+        }
+    }
+     @Override
+    protected void onPause() {
+        super.onPause();
+        // Disable the camera view to release resources
+        if (cameraBridgeViewBase != null) {
+            cameraBridgeViewBase.disableView();
+        }
+    }
     void getPermission() {
-        if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
-            requestPermissions(new String[]{Manifest.permission.CAMERA}, 101);
-        }
+            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, 101);
+            } else {
+                // Permission already granted, start camera
+                cameraBridgeViewBase.enableView();
+            }
     }
 
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults){
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if(grantResults.length>0 && grantResults[0] != PackageManager.PERMISSION_GRANTED){
-            getPermission();
+        public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+            super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+            if (requestCode == 101) {
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    // Permission granted, start camera
+                    cameraBridgeViewBase.enableView();
+                }
+            }
         }
     }
-}

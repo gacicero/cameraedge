@@ -2,7 +2,7 @@
   {
     "level_": 0,
     "message_": "Start JSON generation. Platform version: 24 min SDK version: arm64-v8a",
-    "file_": "/Users/georgecicero/cameraedge/openCV/libcxx_helper/CMakeLists.txt",
+    "file_": "/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV/libcxx_helper/CMakeLists.txt",
     "tag_": "debug|arm64-v8a",
     "diagnosticCode_": 0,
     "memoizedIsInitialized": 1,
@@ -11,12 +11,12 @@
       "fieldsDescending": {}
     },
     "memoizedSize": -1,
-    "memoizedHashCode": 69769728
+    "memoizedHashCode": 1859841937
   },
   {
     "level_": 0,
-    "message_": "JSON \u0027/Users/georgecicero/cameraedge/openCV/.cxx/Debug/4j4r2f5m/arm64-v8a/android_gradle_build.json\u0027 was up-to-date",
-    "file_": "/Users/georgecicero/cameraedge/openCV/libcxx_helper/CMakeLists.txt",
+    "message_": "JSON \u0027/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV/.cxx/Debug/4j4r2f5m/arm64-v8a/android_gradle_build.json\u0027 was up-to-date",
+    "file_": "/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV/libcxx_helper/CMakeLists.txt",
     "tag_": "debug|arm64-v8a",
     "diagnosticCode_": 0,
     "memoizedIsInitialized": 1,
@@ -25,12 +25,12 @@
       "fieldsDescending": {}
     },
     "memoizedSize": -1,
-    "memoizedHashCode": 554830518
+    "memoizedHashCode": 2142523247
   },
   {
     "level_": 0,
     "message_": "JSON generation completed without problems",
-    "file_": "/Users/georgecicero/cameraedge/openCV/libcxx_helper/CMakeLists.txt",
+    "file_": "/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV/libcxx_helper/CMakeLists.txt",
     "tag_": "debug|arm64-v8a",
     "diagnosticCode_": 0,
     "memoizedIsInitialized": 1,
@@ -39,6 +39,6 @@
       "fieldsDescending": {}
     },
     "memoizedSize": -1,
-    "memoizedHashCode": -1883341090
+    "memoizedHashCode": -93268881
   }
 ]
