@@ -27,6 +27,8 @@ public class MainActivity extends CameraActivity {
 
     CameraBridgeViewBase cameraBridgeViewBase;
     private Button startButton;
+    private boolean isStartButtonClicked = false;
+
     private TextView welcomeTextView;
     private
     Mat gray;
@@ -34,7 +36,7 @@ public class MainActivity extends CameraActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        welcomeTextView = findViewById(R.id.welcomeTextView);
         startButton = findViewById(R.id.startButton);
         startButton.setOnClickListener(new View.OnClickListener() {
                                            @Override
@@ -42,8 +44,10 @@ public class MainActivity extends CameraActivity {
                                                getPermission();
                                                //vanish startButton
                                                startButton.setVisibility(View.GONE);
+                                               isStartButtonClicked = true;
                                                // vanish welcomeTextView
                                                welcomeTextView.setVisibility(View.GONE);
+
                                            }
 
     });
@@ -90,7 +94,9 @@ public class MainActivity extends CameraActivity {
             // Handle initialization error if needed
         } else {
             // Start the camera view
-           // cameraBridgeViewBase.enableView();
+            if (isStartButtonClicked) {
+                cameraBridgeViewBase.enableView();
+            }
         }
     }
      @Override
