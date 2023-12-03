@@ -20,11 +20,20 @@
      android:background="#fff"
      android:textColor="#008080"
      android:text="@string/welcome_message" />
+  <TextView
+      android:id="@+id/startTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:textSize="15sp"
+      android:background="#fff"
+      android:textColor="#008080"
+      android:text="@string/start_message" />
  <Button
      android:id="@+id/startButton"
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
-     android:text="@string/start_button"
+     android:text="@string/HERE_button"
      android:layout_gravity="center"
      android:background="#008080"/>
 

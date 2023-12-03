@@ -1,2 +1,2 @@
-ninja: Entering directory `C:\Users\16033\OneDrive\Documents\GitHub\cameraedge\openCV\.cxx\Debug\4j4r2f5m\x86_64'
+ninja: Entering directory `/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV/.cxx/Debug/4j4r2f5m/x86_64'
 ninja: no work to do.

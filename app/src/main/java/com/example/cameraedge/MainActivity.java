@@ -17,6 +17,7 @@ import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.android.OpenCVLoader;
 import org.opencv.core.Core;
 import org.opencv.core.Mat;
+import org.opencv.core.Point;
 import org.opencv.core.Scalar;
 import org.opencv.imgproc.Imgproc;
 
@@ -32,6 +33,7 @@ public class MainActivity extends CameraActivity {
     private boolean isStartButtonClicked = false;
 
     private TextView welcomeTextView;
+    private TextView startTextView;
     private
     Mat gray;
     @Override
@@ -39,6 +41,7 @@ public class MainActivity extends CameraActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         welcomeTextView = findViewById(R.id.welcomeTextView);
+        startTextView = findViewById(R.id.startTextView);
         startButton = findViewById(R.id.startButton);
         startButton.setOnClickListener(new View.OnClickListener() {
                                            @Override
@@ -49,7 +52,8 @@ public class MainActivity extends CameraActivity {
                                                isStartButtonClicked = true;
                                                // vanish welcomeTextView
                                                welcomeTextView.setVisibility(View.GONE);
-
+                                               startTextView.setVisibility(View.GONE);
+                                               cameraBridgeViewBase.enableView();
                                            }
 
     });
@@ -70,27 +74,14 @@ public class MainActivity extends CameraActivity {
             @Override
             public Mat onCameraFrame(CameraBridgeViewBase.CvCameraViewFrame inputFrame) {
                 gray = inputFrame.gray();
-                Mat result = new Mat();
-
+                Mat rotationMatrix = Imgproc.getRotationMatrix2D(new Point(gray.cols() / 2, gray.rows() / 2), -90, 1);
+                Imgproc.warpAffine(gray, gray, rotationMatrix, gray.size());
                 Imgproc.Canny(gray, gray, 80, 100);
-                Mat color = new Mat();
-                Imgproc.applyColorMap(gray,color,Imgproc.COLORMAP_SUMMER);
 
-                return color;
-               // Core.inRange(color, new Scalar(0), new Scalar(50), result);
-                //result.setTo(new Scalar(200,150,255),result);
-                //return result;
-
-
-
-
+                return gray;
 
             }
         });
-
-        /* if (OpenCVLoader.initDebug()) {
-            cameraBridgeViewBase.enableView();
-        } */
 
     }
 
@@ -103,11 +94,17 @@ public class MainActivity extends CameraActivity {
         super.onResume();
         // Ensure that OpenCVLoader is initialized
         if (!OpenCVLoader.initDebug()) {
+
             // Handle initialization error if needed
         } else {
             // Start the camera view
-            if (isStartButtonClicked) {
-                cameraBridgeViewBase.enableView();
+            if (isStartButtonClicked && cameraBridgeViewBase != null) {
+                if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+                    cameraBridgeViewBase.enableView();
+                } else {
+                    // Request camera permission
+                    getPermission();
+                }
             }
         }
     }
