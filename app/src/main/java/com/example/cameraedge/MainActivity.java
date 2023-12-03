@@ -9,6 +9,7 @@ import android.Manifest;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import org.opencv.android.CameraActivity;
 import org.opencv.android.CameraBridgeViewBase;
@@ -26,6 +27,8 @@ public class MainActivity extends CameraActivity {
 
     CameraBridgeViewBase cameraBridgeViewBase;
     private Button startButton;
+    private TextView welcomeTextView;
+    private
     Mat gray;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +40,10 @@ public class MainActivity extends CameraActivity {
                                            @Override
                                            public void onClick(View v) {
                                                getPermission();
+                                               //vanish startButton
                                                startButton.setVisibility(View.GONE);
+                                               // vanish welcomeTextView
+                                               welcomeTextView.setVisibility(View.GONE);
                                            }
 
     });
