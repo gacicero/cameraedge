@@ -15,8 +15,10 @@ import org.opencv.android.CameraActivity;
 import org.opencv.android.CameraBridgeViewBase;
 
 import org.opencv.android.OpenCVLoader;
+import org.opencv.core.Core;
 import org.opencv.core.Mat;
 import org.opencv.core.Point;
+import org.opencv.core.Scalar;
 import org.opencv.imgproc.Imgproc;
 
 import java.util.Collections;
@@ -31,6 +33,7 @@ public class MainActivity extends CameraActivity {
     private boolean isStartButtonClicked = false;
 
     private TextView welcomeTextView;
+    private TextView startTextView;
     private
     Mat gray;
     @Override
@@ -38,6 +41,7 @@ public class MainActivity extends CameraActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         welcomeTextView = findViewById(R.id.welcomeTextView);
+        startTextView = findViewById(R.id.startTextView);
         startButton = findViewById(R.id.startButton);
         startButton.setOnClickListener(new View.OnClickListener() {
                                            @Override
@@ -48,6 +52,7 @@ public class MainActivity extends CameraActivity {
                                                isStartButtonClicked = true;
                                                // vanish welcomeTextView
                                                welcomeTextView.setVisibility(View.GONE);
+                                               startTextView.setVisibility(View.GONE);
                                                cameraBridgeViewBase.enableView();
                                            }
 
@@ -77,10 +82,6 @@ public class MainActivity extends CameraActivity {
 
             }
         });
-
-        /* if (OpenCVLoader.initDebug()) {
-            cameraBridgeViewBase.enableView();
-        } */
 
     }
 
