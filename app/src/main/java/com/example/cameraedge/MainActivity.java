@@ -20,6 +20,8 @@ import org.opencv.imgproc.Imgproc;
 
 import java.util.Collections;
 import java.util.List;
+import org.opencv.core.Core;
+
 
 
 
@@ -47,7 +49,7 @@ public class MainActivity extends CameraActivity {
                                                isStartButtonClicked = true;
                                                // vanish welcomeTextView
                                                welcomeTextView.setVisibility(View.GONE);
-
+                                               cameraBridgeViewBase.enableView();
                                            }
 
     });
@@ -68,7 +70,7 @@ public class MainActivity extends CameraActivity {
             @Override
             public Mat onCameraFrame(CameraBridgeViewBase.CvCameraViewFrame inputFrame) {
                 gray = inputFrame.gray();
-
+                Core.rotate(gray, gray, Core.ROTATE_90_CLOCKWISE);
                 Imgproc.Canny(gray, gray, 80, 100);
 
                 return gray;
@@ -91,6 +93,7 @@ public class MainActivity extends CameraActivity {
         super.onResume();
         // Ensure that OpenCVLoader is initialized
         if (!OpenCVLoader.initDebug()) {
+            OpenCVLoader.initDebug();
             // Handle initialization error if needed
         } else {
             // Start the camera view
