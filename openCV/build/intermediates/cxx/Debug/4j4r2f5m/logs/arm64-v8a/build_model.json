@@ -6,9 +6,9 @@
     "deprecated": false,
     "default": true
   },
-  "cxxBuildFolder": "/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV/.cxx/Debug/4j4r2f5m/arm64-v8a",
-  "soFolder": "/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV/build/intermediates/cxx/Debug/4j4r2f5m/obj/arm64-v8a",
-  "soRepublishFolder": "/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV/build/intermediates/cmake/debug/obj/arm64-v8a",
+  "cxxBuildFolder": "C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\.cxx\\Debug\\4j4r2f5m\\arm64-v8a",
+  "soFolder": "C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\build\\intermediates\\cxx\\Debug\\4j4r2f5m\\obj\\arm64-v8a",
+  "soRepublishFolder": "C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a",
   "abiPlatformVersion": 24,
   "cmake": {
     "effectiveConfiguration": {
@@ -25,7 +25,10 @@
     "variantName": "debug",
     "isDebuggableEnabled": true,
     "validAbiList": [
-      "ARM64_V8A"
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
     ],
     "buildTargetSet": [
       "opencv_jni_shared"
@@ -33,15 +36,15 @@
     "implicitBuildTargetSet": [],
     "cmakeSettingsConfiguration": "android-gradle-plugin-predetermined-name",
     "module": {
-      "cxxFolder": "/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV/.cxx",
-      "intermediatesBaseFolder": "/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV/build/intermediates",
-      "intermediatesFolder": "/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV/build/intermediates/cxx",
+      "cxxFolder": "C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\.cxx",
+      "intermediatesBaseFolder": "C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\build\\intermediates",
+      "intermediatesFolder": "C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\build\\intermediates\\cxx",
       "gradleModulePathName": ":openCV",
-      "moduleRootFolder": "/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV",
-      "moduleBuildFile": "/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV/build.gradle",
-      "makeFile": "/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV/libcxx_helper/CMakeLists.txt",
+      "moduleRootFolder": "C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV",
+      "moduleBuildFile": "C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\build.gradle",
+      "makeFile": "C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\libcxx_helper\\CMakeLists.txt",
       "buildSystem": "CMAKE",
-      "ndkFolder": "/Users/siriallegra-berger/Library/Android/sdk/ndk/25.1.8937393",
+      "ndkFolder": "C:\\Users\\jackh\\AppData\\Local\\Android\\Sdk\\ndk\\25.1.8937393",
       "ndkVersion": "25.1.8937393",
       "ndkSupportedAbiList": [
         "ARMEABI_V7A",
@@ -107,33 +110,32 @@
           "default": true
         }
       ],
-      "cmakeToolchainFile": "/Users/siriallegra-berger/Library/Android/sdk/ndk/25.1.8937393/build/cmake/android.toolchain.cmake",
+      "cmakeToolchainFile": "C:\\Users\\jackh\\AppData\\Local\\Android\\Sdk\\ndk\\25.1.8937393\\build\\cmake\\android.toolchain.cmake",
       "cmake": {
         "isValidCmakeAvailable": true,
-        "cmakeExe": "/Users/siriallegra-berger/Library/Android/sdk/cmake/3.22.1/bin/cmake",
+        "cmakeExe": "C:\\Users\\jackh\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\cmake.exe",
         "minimumCmakeVersion": "3.22.1"
       },
       "stlSharedObjectMap": {
         "LIBCXX_SHARED": {
-          "ARMEABI_V7A": "/Users/siriallegra-berger/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/libc++_shared.so",
-          "ARM64_V8A": "/Users/siriallegra-berger/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so",
-          "X86": "/Users/siriallegra-berger/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/libc++_shared.so",
-          "X86_64": "/Users/siriallegra-berger/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/x86_64-linux-android/libc++_shared.so"
+          "ARMEABI_V7A": "C:\\Users\\jackh\\AppData\\Local\\Android\\Sdk\\ndk\\25.1.8937393\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\arm-linux-androideabi\\libc++_shared.so",
+          "ARM64_V8A": "C:\\Users\\jackh\\AppData\\Local\\Android\\Sdk\\ndk\\25.1.8937393\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\aarch64-linux-android\\libc++_shared.so",
+          "X86": "C:\\Users\\jackh\\AppData\\Local\\Android\\Sdk\\ndk\\25.1.8937393\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\i686-linux-android\\libc++_shared.so",
+          "X86_64": "C:\\Users\\jackh\\AppData\\Local\\Android\\Sdk\\ndk\\25.1.8937393\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\x86_64-linux-android\\libc++_shared.so"
         },
         "LIBCXX_STATIC": {},
         "NONE": {},
         "SYSTEM": {}
       },
       "project": {
-        "rootBuildGradleFolder": "/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge",
-        "sdkFolder": "/Users/siriallegra-berger/Library/Android/sdk",
+        "rootBuildGradleFolder": "C:\\Users\\jackh\\Documents\\GitHub\\cameraedge",
+        "sdkFolder": "C:\\Users\\jackh\\AppData\\Local\\Android\\Sdk",
         "isBuildOnlyTargetAbiEnabled": true,
-        "ideBuildTargetAbi": "arm64-v8a",
         "isCmakeBuildCohabitationEnabled": false,
         "isPrefabEnabled": false
       },
       "outputOptions": [],
-      "ninjaExe": "/Users/siriallegra-berger/Library/Android/sdk/cmake/3.22.1/bin/ninja"
+      "ninjaExe": "C:\\Users\\jackh\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe"
     },
     "prefabClassPaths": [],
     "prefabPackages": [],
@@ -144,29 +146,29 @@
   "buildSettings": {
     "environmentVariables": []
   },
-  "prefabFolder": "/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV/.cxx/Debug/4j4r2f5m/prefab/arm64-v8a",
+  "prefabFolder": "C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\.cxx\\Debug\\4j4r2f5m\\prefab\\arm64-v8a",
   "isActiveAbi": true,
   "fullConfigurationHash": "4j4r2f5m27g6o401v1k4n1c1j1c2n234m2k133o226e1s6b5v6m1a3050714q60",
   "fullConfigurationHashKey": "# Values used to calculate the hash in this folder name.\n# Should not depend on the absolute path of the project itself.\n#   - AGP: 7.4.2.\n#   - $NDK is the path to NDK 25.1.8937393.\n#   - $PROJECT is the path to the parent folder of the root Gradle build file.\n#   - $ABI is the ABI to be built with. The specific value doesn\u0027t contribute to the value of the hash.\n#   - $HASH is the hash value computed from this text.\n#   - $CMAKE is the path to CMake 3.22.1.\n#   - $NINJA is the path to Ninja.\n-H$PROJECT/openCV/libcxx_helper\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_SYSTEM_VERSION\u003d24\n-DANDROID_PLATFORM\u003dandroid-24\n-DANDROID_ABI\u003d$ABI\n-DCMAKE_ANDROID_ARCH_ABI\u003d$ABI\n-DANDROID_NDK\u003d$NDK\n-DCMAKE_ANDROID_NDK\u003d$NDK\n-DCMAKE_TOOLCHAIN_FILE\u003d$NDK/build/cmake/android.toolchain.cmake\n-DCMAKE_MAKE_PROGRAM\u003d$NINJA\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d$PROJECT/openCV/build/intermediates/cxx/Debug/$HASH/obj/$ABI\n-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003d$PROJECT/openCV/build/intermediates/cxx/Debug/$HASH/obj/$ABI\n-DCMAKE_BUILD_TYPE\u003dDebug\n-B$PROJECT/openCV/.cxx/Debug/$HASH/$ABI\n-GNinja\n-DANDROID_STL\u003dc++_shared",
   "configurationArguments": [
-    "-H/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV/libcxx_helper",
+    "-HC:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\libcxx_helper",
     "-DCMAKE_SYSTEM_NAME\u003dAndroid",
     "-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON",
     "-DCMAKE_SYSTEM_VERSION\u003d24",
     "-DANDROID_PLATFORM\u003dandroid-24",
     "-DANDROID_ABI\u003darm64-v8a",
     "-DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a",
-    "-DANDROID_NDK\u003d/Users/siriallegra-berger/Library/Android/sdk/ndk/25.1.8937393",
-    "-DCMAKE_ANDROID_NDK\u003d/Users/siriallegra-berger/Library/Android/sdk/ndk/25.1.8937393",
-    "-DCMAKE_TOOLCHAIN_FILE\u003d/Users/siriallegra-berger/Library/Android/sdk/ndk/25.1.8937393/build/cmake/android.toolchain.cmake",
-    "-DCMAKE_MAKE_PROGRAM\u003d/Users/siriallegra-berger/Library/Android/sdk/cmake/3.22.1/bin/ninja",
-    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV/build/intermediates/cxx/Debug/4j4r2f5m/obj/arm64-v8a",
-    "-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003d/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV/build/intermediates/cxx/Debug/4j4r2f5m/obj/arm64-v8a",
+    "-DANDROID_NDK\u003dC:\\Users\\jackh\\AppData\\Local\\Android\\Sdk\\ndk\\25.1.8937393",
+    "-DCMAKE_ANDROID_NDK\u003dC:\\Users\\jackh\\AppData\\Local\\Android\\Sdk\\ndk\\25.1.8937393",
+    "-DCMAKE_TOOLCHAIN_FILE\u003dC:\\Users\\jackh\\AppData\\Local\\Android\\Sdk\\ndk\\25.1.8937393\\build\\cmake\\android.toolchain.cmake",
+    "-DCMAKE_MAKE_PROGRAM\u003dC:\\Users\\jackh\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dC:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\build\\intermediates\\cxx\\Debug\\4j4r2f5m\\obj\\arm64-v8a",
+    "-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dC:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\build\\intermediates\\cxx\\Debug\\4j4r2f5m\\obj\\arm64-v8a",
     "-DCMAKE_BUILD_TYPE\u003dDebug",
-    "-B/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV/.cxx/Debug/4j4r2f5m/arm64-v8a",
+    "-BC:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\.cxx\\Debug\\4j4r2f5m\\arm64-v8a",
     "-GNinja",
     "-DANDROID_STL\u003dc++_shared"
   ],
-  "stlLibraryFile": "/Users/siriallegra-berger/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so",
-  "intermediatesParentFolder": "/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV/build/intermediates/cxx/Debug/4j4r2f5m"
+  "stlLibraryFile": "C:\\Users\\jackh\\AppData\\Local\\Android\\Sdk\\ndk\\25.1.8937393\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\aarch64-linux-android\\libc++_shared.so",
+  "intermediatesParentFolder": "C:\\Users\\jackh\\Documents\\GitHub\\cameraedge\\openCV\\build\\intermediates\\cxx\\Debug\\4j4r2f5m"
 }
