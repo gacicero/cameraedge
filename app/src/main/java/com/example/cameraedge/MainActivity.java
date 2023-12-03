@@ -16,6 +16,7 @@ import org.opencv.android.CameraBridgeViewBase;
 
 import org.opencv.android.OpenCVLoader;
 import org.opencv.core.Mat;
+import org.opencv.core.Point;
 import org.opencv.imgproc.Imgproc;
 
 import java.util.Collections;
@@ -70,7 +71,8 @@ public class MainActivity extends CameraActivity {
             @Override
             public Mat onCameraFrame(CameraBridgeViewBase.CvCameraViewFrame inputFrame) {
                 gray = inputFrame.gray();
-                Core.rotate(gray, gray, Core.ROTATE_90_CLOCKWISE);
+                Mat rotationMatrix = Imgproc.getRotationMatrix2D(new Point(gray.cols() / 2, gray.rows() / 2), -90, 1);
+                Imgproc.warpAffine(gray, gray, rotationMatrix, gray.size());
                 Imgproc.Canny(gray, gray, 80, 100);
 
                 return gray;
