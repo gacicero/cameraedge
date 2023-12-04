@@ -1,2 +1,0 @@
-ninja: Entering directory `/Users/siriallegra-berger/Documents/GitHub/Lab11/cameraedge/openCV/.cxx/Debug/4j4r2f5m/armeabi-v7a'
-ninja: no work to do.

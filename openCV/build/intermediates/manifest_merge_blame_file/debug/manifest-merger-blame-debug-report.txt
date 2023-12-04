@@ -3,6 +3,6 @@
 3    package="org.opencv" >
 4
 5    <uses-sdk android:minSdkVersion="24" />
-5-->C:\Users\16033\OneDrive\Documents\GitHub\cameraedge\openCV\java\AndroidManifest.xml
+5-->C:\Users\16033\AndroidStudioProjects\cameraedge\openCV\java\AndroidManifest.xml
 6
 7</manifest>

@@ -46,8 +46,8 @@
 
   <org.opencv.android.JavaCamera2View
       android:id="@+id/cameraView"
-      android:layout_width="333dp"
-      android:layout_height="427dp"
+      android:layout_width="523dp"
+      android:layout_height="312dp"
       android:layout_gravity="center"
       android:visibility="visible"
       tools:visibility="visible" />
