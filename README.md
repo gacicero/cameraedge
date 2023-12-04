@@ -1,4 +1,4 @@
-# cameraedge
+# cartoonify
 
 Cartoonify App
 Overview
